@@ -8,7 +8,7 @@ class Main extends Form {
   state = {
     data: {
       hint: [],
-      answer: ""
+      answers: ""
     },
     errors: {}
   };

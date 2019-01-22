@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import AnswerForm from "./components/answerForm";
 import NavBar from "./components/navBar";
 import NotFound from "./components/notFound";
 import Main from "./components/main";
@@ -14,7 +13,6 @@ class App extends Component {
         <main className="container">
           <Switch>
             <Route path="/main" component={Main} />
-            <Route path="/questions" component={AnswerForm} />
             <Route path="/not-found" component={NotFound} />
             <Redirect from="/" exact to="/main" />
             <Redirect to="/not-found" />
