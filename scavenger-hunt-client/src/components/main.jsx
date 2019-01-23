@@ -8,9 +8,9 @@ class Main extends Form {
   state = {
     data: {
       hint: [],
-      answers: ""
+      answer: ""
     },
-    errors: {}
+    error: {}
   };
 
   schema = {
