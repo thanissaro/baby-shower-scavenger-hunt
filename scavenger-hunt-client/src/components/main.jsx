@@ -28,7 +28,7 @@ class Main extends Form {
     console.log(this.state.data);
     return (
       <div>
-        <ProgressBar active bsStyle="success" now={50} />
+        <ProgressBar active bsStyle="success" now={25} />
         <form onSubmit={this.handleSubmit}>
           <h1>Hint: </h1>
           {this.renderInput("answer", "Answer")}
