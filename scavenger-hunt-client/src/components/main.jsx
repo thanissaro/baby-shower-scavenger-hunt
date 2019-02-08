@@ -6,10 +6,7 @@ import { getQuestions } from "../services/questions";
 
 class Main extends Form {
   state = {
-    data: {
-      hint: [],
-      answer: ""
-    },
+    data: [],
     errors: {}
   };
 
@@ -25,12 +22,15 @@ class Main extends Form {
   }
 
   render() {
-    console.log(this.state.data);
+    const hint = this.state.data.map(data => {
+      return <span key={data.id}>{data.hint}</span>;
+    });
+
     return (
       <div>
         <ProgressBar active bsStyle="success" now={50} />
         <form onSubmit={this.handleSubmit}>
-          <h1>Hint: </h1>
+          <h1>Hint: {hint[0]}</h1>
           {this.renderInput("data[answer]", "Answer")}
           {this.renderButton("Submit")}
         </form>

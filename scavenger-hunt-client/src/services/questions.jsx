@@ -18,6 +18,11 @@ const questions = [
     id: 4,
     hint: "hint 4",
     answer: "answer 4"
+  },
+  {
+    id: 5,
+    hint: "hint 5",
+    answer: "answer 5"
   }
 ];
 
